@@ -1,0 +1,80 @@
+.markdown-body {
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+pre {
+  background-color: #f6f8fa;
+  padding: 1em;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Fira Code', 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+}
+
+/* ChatMessage.vue 相關樣式 */
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  word-wrap: break-word;
+  margin-bottom: 16px; /* Add margin to separate messages */
+  line-height: 1.5;
+}
+
+.chat-message .markdown-content {
+  min-width: 30%;
+  max-width: 70%;
+  align-self: flex-start;
+  background-color: #2d2d2d; /* Assistant message dark grey */
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.chat-message .markdown-content code {
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+.chat-message.user .text-block {
+  background-color: #2d3748; /* User message dark blue */
+  color: #e0e0e0;
+  padding: 12px 16px;
+  border-radius: 18px;
+}
+.chat-message .markdown-content .inner {
+  max-height: 500px;
+  overflow-y: auto;
+}
+.chat-message .markdown-content .inner p {
+  margin-bottom: 10px;
+}
+.chat-message.assistant .markdown-content {
+  align-self: flex-end;
+}
+
+.chat-message.assistant .text-block {
+  background-color: #2d2d2d; /* Assistant message dark grey */
+  color: #e0e0e0;
+}
+
+.chat-message .code-block {
+  padding: 0;
+  background-color: transparent;
+}
+
+.chat-message .code-block pre {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1em;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.chat-message img {
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
