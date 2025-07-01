@@ -1,0 +1,93 @@
+/* ChatInput.vue 相關樣式 */
+.input-area {
+  padding: 16px 24px;
+  border-top: 1px solid #333;
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+}
+
+.input-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #444;
+  background-color: #2d2d2d;
+  border-radius: 24px;
+  padding-left: 10px;
+  margin-right: 16px;
+}
+
+.input-wrapper:focus-within {
+  border-color: #3b82f6;
+}
+
+.image-preview-container {
+  position: relative;
+  margin-right: 8px;
+}
+
+.image-preview {
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.remove-image-btn {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #2d2d2d;
+  border: 1px solid #555;
+  color: #e0e0e0;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 1;
+  padding: 0;
+}
+
+textarea {
+  flex-grow: 1;
+  padding: 14px 10px;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  line-height: 1.5;
+  max-height: 150px;
+  overflow-y: hidden;
+  background-color: transparent;
+  color: #e0e0e0;
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+button:disabled {
+  background-color: #333;
+  cursor: not-allowed;
+}
